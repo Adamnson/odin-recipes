@@ -12,7 +12,7 @@
 
 h1 {
   font-size: 3rem;
-  color: hotpink;
+  color: yellow;
 }
 
 a {
@@ -23,13 +23,54 @@ a {
 .navbar {
   display: flex;
   justify-content: center;
+  background-color: lightseagreen;
 }
 
 .img {
   display: flex;
   justify-content: center;
-  height: 40rem;
-  width: 60rem;
+  height: 10rem;
+  width: auto;
   border: 2.5rem solid purple;
+}
 
+.counters {
+  background: lightgrey;
+  text-align: left;
+  padding: 5em 8em;
+  margin-top: 7em;
+
+  counter-reset: section-counter;
+}
+
+.section { 
+  position: relative;
+  counter-increment: section-counter;
+  width: 300px;
+}
+
+.section::before {
+  content: counter(section-counter);
+  left: -2.5em;
+  top: -.5em;
+  background: white;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border: 1em solid grey;
+  color: ivory;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+#description {
+  border: 1.5em solid magenta;
+  padding-inline: 2.4rem;
+  padding-block: 5rem;
 }
