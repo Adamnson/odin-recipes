@@ -35,22 +35,26 @@ a {
 }
 
 .counters {
-  background: lightgrey;
+  background: blanchedalmond;
   text-align: left;
-  padding: 5em 8em;
-  margin-top: 7em;
-
+  padding: 0.5em 8em;
   counter-reset: section-counter;
+}
+
+.container {
+  border: .2rem dotted  brown;
+  padding: 1.2rem 0.7rem;
 }
 
 .section { 
   position: relative;
   counter-increment: section-counter;
-  width: 300px;
+  margin-bottom: 1.25em;
 }
 
 .section::before {
   content: counter(section-counter);
+  position: absolute;
   left: -2.5em;
   top: -.5em;
   background: white;
@@ -60,7 +64,7 @@ a {
   display: flex; 
   justify-content: center;
   align-items: center;
-  border: 1em solid grey;
+  border: 1em solid brown;
   color: ivory;
   box-sizing: border-box;
 }
@@ -73,4 +77,13 @@ li {
   border: 1.5em solid magenta;
   padding-inline: 2.4rem;
   padding-block: 5rem;
+}
+
+h2 {
+  color: blue;
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  /* border: 5px solid orangered; */
+  padding: 0.75em;
 }
