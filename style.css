@@ -12,7 +12,8 @@
 
 h1 {
   font-size: 3rem;
-  color: yellow;
+  /* color: rgb(230, 197, 8); */
+  color: blanchedalmond;
 }
 
 a {
@@ -23,7 +24,7 @@ a {
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: lightseagreen;
+  background-color: brown;
 }
 
 .img {
@@ -31,25 +32,27 @@ a {
   justify-content: center;
   height: 10rem;
   width: auto;
-  border: 2.5rem solid purple;
+  /* border: 2.5rem solid purple; */
 }
 
 .counters {
   background: blanchedalmond;
   text-align: left;
-  padding: 0.5em 8em;
+  padding: 1.2rem;
   counter-reset: section-counter;
 }
 
 .container {
-  border: .2rem dotted  brown;
+  /* border: .2rem dotted  brown; */
   padding: 1.2rem 0.7rem;
 }
 
 .section { 
   position: relative;
   counter-increment: section-counter;
+  margin: 1.5rem;
   margin-bottom: 1.25em;
+  margin-left: 25vw;
 }
 
 .section::before {
@@ -74,16 +77,27 @@ li {
 }
 
 #description {
-  border: 1.5em solid magenta;
+  /* border: 1.5em solid magenta; */
   padding-inline: 2.4rem;
   padding-block: 5rem;
+  background-color: oldlace;
 }
 
 h2 {
-  color: blue;
+  color: lightseagreen;
   display: flex;
   justify-content: center;
   font-size: 5rem;
   /* border: 5px solid orangered; */
   padding: 0.75em;
+}
+
+#ingredients, 
+#steps {
+  background-color: oldlace;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
