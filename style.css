@@ -2,6 +2,8 @@
 
 :root {
   --fluid-30-66: clamp(1.875rem, 1.0924rem + 3.913vi, 4.125rem);
+  --space-xl-3xl: clamp(1.5rem, 1.9402rem + 7.1739vi, 7.5rem);
+  --space-xl-3xl_mod: clamp(4.5rem, 1.9402rem + 7.1739vi, 10.5rem);
 }
 
 * {
@@ -53,7 +55,8 @@ a {
   counter-increment: section-counter;
   margin: 1.5rem;
   margin-bottom: 1.25em;
-  margin-left: 25vw;
+  margin-inline: 25vw;
+
 }
 
 .section::before {
@@ -99,4 +102,12 @@ h2 {
   padding: 1em;
   display: flex;
   flex-direction: column;
+}
+
+#ingredients > .section {
+  padding-left: calc( var(--space-xl-3xl) + 3em);
+}
+
+#ingredients > .section::before { 
+  left: var(--space-xl-3xl);
 }
