@@ -118,10 +118,24 @@ button {
 }
 
 .card {
-margin-block: 5rem;
+margin: 5rem;
+border-radius: 2em;
 }
 
 .card-img-top {
-  max-width: 15rem;
+  width: auto;
   max-height: 12rem;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  width: 100%;
+  padding: 0.1em;
+  border-radius: 2em;
+  border: 1em solid brown;
+}
+
+.card-title {
+  text-align: center;
+  padding-bottom: 1em;
+  color: brown;
 }
