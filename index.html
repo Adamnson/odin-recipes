@@ -6,6 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
    <link rel="stylesheet" href="style.css"/>
   <title>Odin Recipe Book</title>
 </head>
@@ -16,14 +17,53 @@
   <p>Hello and Welcome! We will be adding a few simple recipes today!
     It should be fun!</p>
   <div class="counters">
-    <ul id="recipes">
-      <li class="section" id="tomato-juice" >
-        <a href="recipes/tomato-juice.html">Tomato Juice</a></li>
-      <li class="section" id="poha">
-        <a href="recipes/poha.html">Poha</a></li>
-      <li class="section" id="maggie">
-        <a href="recipes/cheese-maggie.html">Cheese Maggie</a></li>
-    </ul>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="images/tomato-juice.jpeg" alt="Tomato Juice">
+      <div class="card-body">
+        <h5 class="card-title">Tomato Juice</h5>
+        <p class="card-text">Healthy and easy to make</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Beginner Friendly</li>
+        <li class="list-group-item">Prep time less than 10 min</li>
+      </ul>
+      <div class="card-body">
+        <a href="recipes/tomato-juice.html" class="card-link">Card link</a>
+        <i class="bi bi-arrow-right-square"></i>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="images/kanda-batata-poha.jpg" alt="Tomato Juice">
+      <div class="card-body">
+        <h5 class="card-title">Poha</h5>
+        <p class="card-text">Healthy and easy to make</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Beginner Friendly</li>
+        <li class="list-group-item">Prep time less than 10 min</li>
+      </ul>
+      <div class="card-body">
+        <a href="recipes/poha.html" class="card-link">Card link</a>
+        <i class="bi bi-arrow-right-square"></i>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="images/maggie.jpeg" alt="Tomato Juice">
+      <div class="card-body">
+        <h5 class="card-title">Cheese Maggi</h5>
+        <p class="card-text">Healthy and easy to make</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Beginner Friendly</li>
+        <li class="list-group-item">Prep time less than 10 min</li>
+      </ul>
+      <div class="card-body">
+        <a href="recipes/cheese-maggie.html" class="card-link">Card link</a>
+        <i class="bi bi-arrow-right-square"></i>
+      </div>
+    </div>
   </div>
 </body>
 </html>
